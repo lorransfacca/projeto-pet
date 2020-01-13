@@ -14,7 +14,8 @@
                     Donos
                   </a>
                 {% for dono in donos%}
-                    <a href="/dono/{{dono.id}}" class="list-group-item list-group-item-action">{{dono.nome}}</a>
+                <a href="/dono/{{dono.id}}" class="list-group-item list-group-item-action">{{dono.nome}}</a>    
+                
                 {% endfor %}
                 {% else %}
                     <a href="/donos/" class="list-group-item list-group-item-action active">
@@ -22,6 +23,7 @@
                   </a>
                 {% for dono in donos%}
                     <a href="/dono/{{dono.id}}" class="list-group-item list-group-item-action">{{dono.nome}}</a>
+
                 {% endfor %}
                 {% endif %}
                 </div>
