@@ -5,8 +5,7 @@
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-
-                <a href="detail/{{dono.id}}"><button type="submit" class="btn btn-primary">Cadastrar Dono</button></a>
+            <button type="submit" class="btn btn-primary">Cadastrar Dono</button>
         </form>
     </section>
 {% endblock body%}
